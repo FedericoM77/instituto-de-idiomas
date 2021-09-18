@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c2049a3cea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Establecimientos</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/logo.jpg" alt="Logo" height="50px"></a>
-        <nav id="menu_principal">
-            <ul id="menu">
+        <a href="index.html"><img src="img/logo2.png" alt="Logo" height="50px"></a>
+        <nav class="menu_principal">
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="establecimientos.html">Establecimientos</a></li>
                 <li><a href="inscripcion.html">Inscripcion</a></li>
@@ -21,19 +22,37 @@
             </ul>
         </nav>
     </header>
+
+
     <main>
-        <h1>Establecimientos</h1>
-        <section>
+        <h1>ESTABLECIMIENTOS</h1>
+        <section class= "barraBusqueda">
+            <form action="#" method="POST">
+                <input type="search"  name="busqueda" placeholder="Filtra por provincia" >
+                <input type="submit">
+             </form>
+        </section>
+
+        <section class="contenedorEstablecimiento">
             <article>
                 <img src="img/cit-sede.png" alt="cit" width="400" height="300">
+            </article>
+
+            <article >
+                <h2>ESTABLECIMIENTO</h2>
                 <p>CIT – Centro de Idiomas Teplitzky´s</p>
                 <p>Catamarca 1210</p>
                 <p>Corrientes</p>
                 <p>Idiomas: Italiano, Francés e Inglés</p>
                 <a href="detalle-establecimiento.html"><button>Ver Detalle</button></a>
             </article>
+
             <article>
                 <img src="img/isle-sede.png" alt="isle" width="400" height="300">
+            </article>
+
+            <article>
+                <h2>ESTABLECIMIENTO</h2>
                 <p>Instituto Superior de Lenguas Extranjeras</p>
                 <p>Carlos Pellegrini 1515</p>
                 <p>Buenos Aires</p>
@@ -42,36 +61,59 @@
             </article>
             <article>
                 <img src="img/cil-sede.jpg" alt="cil" width="400" height="300">
+            </article>
+            <article>
+                <h2>ESTABLECIMIENTO</h2>
                 <p>Centro Integral de Lenguas</p>
                 <p>León 1753</p>
                 <p>Córdoba</p>
                 <p>Idiomas: Francés, Inglés y Alemán </p>
                 <a href="detalle-establecimiento.html"><button>Ver Detalle</button></a>
             </article>
+
+            <article>
             <img src="img/intercultural-sede.png" alt="Intercultural" width="400px" height="300">
+        </article>
+
+        <article>
+             <h2>ESTABLECIMIENTO</h2>
                 <p>Intercultural – lenguas extranjeras</p>
                 <p>Pedro Vargas 631</p>
                 <p>Mendoza</p>
                 <p>Idiomas: Italiano e Inglés</p>
                 <a href="detalle-establecimiento.html"><button>Ver Detalle</button></a>
-            <article>
-                <img src="" alt="">
             </article>
+            
         </section>
     </main>
-    <footer>
-        <p>Instituto Superior de Idioma</p>
-        <p>Planes 780, Caballito, CABA.</p>
-        <h6>Redes Sociales</h6>
+    <footer class="contenedor-footer">
+        <div>
+            <h5>Datos del grupo</h5>
+            <p>Rinaldi Stefania - 38.522.183</p>
+            <p>Cristian Feldman - 33.557.055</p>
+            <p>Pugliese Federico - 38.200.197</p>
+            <p>Navarro Francisco Javier - 42.375.698</p>
+        </div>
+        <div class="menu-inferior">
+            <h5>Menu Inferior</h5>
+            <nav>
+                 <ul>
+                     <li><a href="establecimientos.html">Establecimientos</a></li>
+                     <li><a href="inscripcion.html">Inscripcion</a></li>
+                     <li><a href="calendario.html">Calendario</a></li>
+                     <li><a href="contacto.html">Contacto</a></li>
+                 </ul>
+            </nav>
+        </div>
+
         <div class="redes">
+            <h5>Redes Sociales</h5>
             <ul>
                 <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a></li>
                 <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="mailto:instituto.isi@gmail.com"><i class="fas fa-envelope"></i></a></li>
             </ul>
         </div>
-        <p>Copyright 2021</p>
-        <a href="integrantes.html" target="_blank" rel="noopener noreferrer">Integrantes</a>
     </footer>
 </body>
 </html>
